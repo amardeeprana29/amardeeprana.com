@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import heroImage from '../assets/background-image2.jpg';
+// Use the public folder for the hero background so it's served at the root URL
+const heroImage = '/background-image2.jpg';
 
 const Hero = () => {
   return (
@@ -45,14 +46,15 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="flex justify-center order-2 md:order-1"
         >
-          <div className="relative group w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full p-1 bg-gradient-to-tr from-accent-cyan/6 via-accent-blue/6 to-accent-purple/6 shadow-2xl">
+          <div className="relative group w-64 h-64 sm:w-72 sm:h-72 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem] rounded-full p-1 bg-gradient-to-tr from-accent-cyan/6 via-accent-blue/6 to-accent-purple/6 shadow-2xl">
             {/* decorative glow behind the photo */}
             <div className="absolute inset-0 rounded-full -z-10 blur-xl opacity-40 bg-gradient-to-r from-accent-cyan to-accent-blue group-hover:opacity-75 transition duration-700 animate-glow" />
 
             <img
               src={heroImage}
               alt="Amardeep Rana"
-              className="relative rounded-full w-full h-full object-cover object-[center_40%] transform scale-95 border-4 border-accent-cyan/50 hover:border-accent-cyan transition-all duration-300 block"
+              className="relative rounded-full w-full h-full object-cover object-[center_40%] border-4 border-accent-cyan/50 hover:border-accent-cyan transition-all duration-300 block"
+              loading="eager"
             />
           </div>
         </motion.div>
