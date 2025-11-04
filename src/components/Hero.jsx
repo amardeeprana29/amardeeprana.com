@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
-import heroImage from '../assets/background-image.jpg';
+import heroImage from '../assets/background-image2.jpg';
 
 const Hero = () => {
   return (
