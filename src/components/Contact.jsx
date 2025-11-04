@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaLinkedin, FaInstagram, FaCode, FaEnvelope } from 'react-icons/fa';
 
@@ -25,7 +25,7 @@ const Contact = () => {
       } else {
         setFormStatus('error');
       }
-    } catch (error) {
+    } catch {
       setFormStatus('error');
     }
   };
@@ -35,8 +35,8 @@ const Contact = () => {
       <div className="container mx-auto max-w-2xl">
         <h1 className="section-heading">Get In Touch</h1>
         <p className="section-subheading">
-          I'm currently looking for new opportunities. Whether you have a question or just want to
-          say hi, I'll try my best to get back to you!
+          I&apos;m currently looking for new opportunities. Whether you have a question or just want
+          to say hi, I&apos;ll try my best to get back to you!
         </p>
 
         <motion.form

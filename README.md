@@ -22,21 +22,25 @@ A modern, responsive, and feature-rich portfolio website built with cutting-edge
 ## 🛠️ Tech Stack
 
 **Core:**
+
 - React 18+ with Hooks
 - Vite (Build Tool)
 - Tailwind CSS (Styling)
 
 **Animations:**
+
 - Framer Motion (Page & Component Animations)
 - React Type Animation (Typing Effects)
 - React CountUp (Number Animations)
 - React Intersection Observer (Scroll Animations)
 
 **Icons & UI:**
+
 - React Icons (Icon Library)
 - Custom CSS Animations
 
 **Form:**
+
 - Formspree (Contact Form Handling)
 
 ## 🎨 Color Palette
@@ -49,7 +53,6 @@ Accent Blue: #00d9ff (Secondary Accent)
 Text Primary: #ccd6f6 (Main Text)
 Text Secondary: #8892b0 (Subtle Text)
 ```
-
 
 ## 📂 Project Structure
 
@@ -103,17 +106,20 @@ Text Secondary: #8892b0 (Subtle Text)
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/amardeeprana29/My-Portfolio.git
 cd My-Portfolio
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 3. Start development server
+
 ```bash
 npm run dev
 ```
@@ -128,15 +134,26 @@ npm run build
 
 The optimized build will be in the `dist` folder.
 
-## 🌐 Deployment
+## 🌐 Deployment (Vercel)
 
-This project is configured for GitHub Pages deployment with base URL `/My-Portfolio/`.
+This project is deployed on Vercel. The repo is configured to build with Vite and serve the `dist` output.
 
-To deploy:
+To redeploy or trigger a deployment manually:
+
+1. Push changes to the `main` branch (Vercel will auto-deploy).
+2. Or, trigger a redeploy from the Vercel dashboard for the project.
+
+If you need to force a redeploy without code changes, you can create an empty commit and push:
+
 ```bash
-npm run build
-# Deploy the dist folder to GitHub Pages
+git commit --allow-empty -m "chore: trigger Vercel redeploy"
+git push
 ```
+
+Notes:
+
+- Ensure `vite.config.js` has `base: '/'` (already configured for Vercel).
+- Keep static assets meant to be referenced from HTML (OG images, etc.) in the `public/` folder so they resolve at the site root.
 
 ## 📧 Contact
 

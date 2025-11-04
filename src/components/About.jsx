@@ -1,4 +1,4 @@
-import React from 'react';
+// React import not required with new JSX transform
 import { motion } from 'framer-motion';
 import { FaCheckCircle } from 'react-icons/fa';
 
@@ -26,8 +26,8 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 text-text-secondary text-lg leading-relaxed">
               <p>
-                Hello! I'm <span className="text-accent-cyan font-semibold">Amardeep Rana</span>, a
-                passionate
+                Hello! I&apos;m{' '}
+                <span className="text-accent-cyan font-semibold">Amardeep Rana</span>, a passionate
                 <span className="text-accent-cyan"> Full Stack Web Developer</span> with hands-on
                 experience in both frontend and backend technologies. I specialize in building
                 exceptional digital experiences that are fast, accessible, and visually appealing.
@@ -35,8 +35,8 @@ const About = () => {
 
               <p>
                 During my{' '}
-                <span className="text-text-primary">B.Tech in Information Technology</span>, I've
-                developed several real-world projects including a{' '}
+                <span className="text-text-primary">B.Tech in Information Technology</span>,
+                I&apos;ve developed several real-world projects including a{' '}
                 <span className="text-accent-cyan font-semibold">
                   Crowd-Sourced Disaster Management System
                 </span>{' '}
@@ -44,10 +44,12 @@ const About = () => {
               </p>
 
               <p>
-                I'm also an{' '}
-                <span className="text-accent-cyan font-semibold">NCC 'C' Certificate</span> holder,
-                which has helped me build discipline, leadership, and teamwork skills that I bring
-                into every project I work on.
+                I&apos;m also an{' '}
+                <span className="text-accent-cyan font-semibold">
+                  NCC &apos;C&apos; Certificate
+                </span>{' '}
+                holder, which has helped me build discipline, leadership, and teamwork skills that I
+                bring into every project I work on.
               </p>
 
               <div className="flex gap-4 flex-wrap mt-8">

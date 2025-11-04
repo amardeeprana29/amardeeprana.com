@@ -1,4 +1,4 @@
-import React from 'react';
+// React import not required with new JSX transform
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaCode, FaTools, FaDatabase, FaLaptopCode } from 'react-icons/fa';

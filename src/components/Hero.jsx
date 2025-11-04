@@ -1,4 +1,4 @@
-import React from 'react';
+// React import not required with new JSX transform
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 // Use the public folder for the hero background so it's served at the root URL
@@ -114,8 +114,9 @@ const Hero = () => {
             transition={{ delay: 1 }}
             className="text-lg md:text-xl text-text-secondary mb-8 leading-relaxed max-w-2xl"
           >
-            I'm a Full Stack Web Developer specializing in building exceptional digital experiences.
-            Currently focused on creating responsive web applications with modern technologies like
+            I&apos;m a Full Stack Web Developer specializing in building exceptional digital
+            experiences. Currently focused on creating responsive web applications with modern
+            technologies like
             <span className="text-accent-cyan"> React.js</span>,
             <span className="text-accent-cyan"> Node.js</span>, and
             <span className="text-accent-cyan"> MongoDB</span>.

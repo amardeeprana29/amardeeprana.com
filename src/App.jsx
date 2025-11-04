@@ -1,4 +1,4 @@
-import React from 'react';
+// React import not required with new JSX transform
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';

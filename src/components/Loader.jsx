@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Loader = () => {
@@ -36,11 +36,11 @@ const Loader = () => {
                 transition={{
                   duration: 2,
                   repeat: Infinity,
-                  ease: "linear"
+                  ease: 'linear',
                 }}
                 className="w-24 h-24 mx-auto mb-8 border-4 border-accent-cyan border-t-transparent rounded-full"
               />
-              
+
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -49,7 +49,7 @@ const Loader = () => {
               >
                 &lt;AR /&gt;
               </motion.h1>
-              
+
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

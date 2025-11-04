@@ -1,4 +1,4 @@
-import React from 'react';
+// React import not required with new JSX transform
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaBuilding } from 'react-icons/fa';
 

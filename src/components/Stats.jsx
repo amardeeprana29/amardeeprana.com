@@ -1,4 +1,4 @@
-import React from 'react';
+// React import not required with new JSX transform
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
@@ -60,21 +60,12 @@ const Stats = () => {
               >
                 {stat.icon}
               </motion.div>
-              
+
               <div className="text-4xl md:text-5xl font-bold text-white mb-2">
-                {inView && (
-                  <CountUp
-                    start={0}
-                    end={stat.end}
-                    duration={2.5}
-                    suffix={stat.suffix}
-                  />
-                )}
+                {inView && <CountUp start={0} end={stat.end} duration={2.5} suffix={stat.suffix} />}
               </div>
-              
-              <p className="text-text-secondary text-sm md:text-base font-mono">
-                {stat.label}
-              </p>
+
+              <p className="text-text-secondary text-sm md:text-base font-mono">{stat.label}</p>
             </motion.div>
           ))}
         </div>

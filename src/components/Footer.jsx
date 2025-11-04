@@ -1,4 +1,4 @@
-import React from 'react';
+// React import not required with new JSX transform
 import { motion } from 'framer-motion';
 import { FaHeart } from 'react-icons/fa';
 
@@ -13,14 +13,16 @@ const Footer = () => {
         className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4"
       >
         <p className="text-text-secondary text-center md:text-left font-mono text-sm">
-          &copy; 2025 Amardeep Rana. Built with <FaHeart className="inline text-accent-cyan animate-pulse" /> using React & Tailwind
+          &copy; 2025 Amardeep Rana. Built with{' '}
+          <FaHeart className="inline text-accent-cyan animate-pulse" /> using React & Tailwind
         </p>
-        
+
         <a
           href="#hero"
           className="text-accent-cyan hover:text-accent-blue transition-colors font-mono text-sm font-semibold group"
         >
-          <span className="inline-block group-hover:-translate-y-1 transition-transform">↑</span> Back to Top
+          <span className="inline-block group-hover:-translate-y-1 transition-transform">↑</span>{' '}
+          Back to Top
         </a>
       </motion.div>
     </footer>

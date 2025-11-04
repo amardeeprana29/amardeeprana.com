@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import disasterImg from '../assets/disaster-project.jpg';
 import blogifyImg from '../assets/blogify-project.jpg';
 import portfolioImg from '../assets/portfolio-project.jpg';
@@ -46,7 +46,7 @@ const Projects = () => {
   return (
     <section id="projects" className="py-20 px-4">
       <div className="container mx-auto">
-        <h1 className="section-heading">Things I've Built</h1>
+        <h1 className="section-heading">Things I&apos;ve Built</h1>
         <p className="section-subheading">A selection of my recent work and side projects</p>
 
         {/* Filter Buttons */}
