@@ -52,7 +52,7 @@ const Hero = () => {
             <img
               src={heroImage}
               alt="Amardeep Rana"
-              className="relative rounded-full w-full h-full object-cover border-4 border-accent-cyan/50 hover:border-accent-cyan transition-all duration-300 block"
+              className="relative rounded-full w-full h-full object-cover object-[center_40%] transform scale-95 border-4 border-accent-cyan/50 hover:border-accent-cyan transition-all duration-300 block"
             />
           </div>
         </motion.div>
