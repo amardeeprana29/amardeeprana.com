@@ -5,7 +5,10 @@ import heroImage from '../assets/background-image2.jpg';
 
 const Hero = () => {
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-20 px-4 relative overflow-hidden">
+    <section
+      id="hero"
+      className="min-h-screen flex items-center justify-center pt-20 px-4 relative overflow-hidden"
+    >
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -16,7 +19,7 @@ const Hero = () => {
           transition={{
             duration: 20,
             repeat: Infinity,
-            ease: "linear"
+            ease: 'linear',
           }}
           className="absolute top-10 right-10 w-64 h-64 bg-accent-cyan/10 rounded-full blur-3xl"
         />
@@ -28,7 +31,7 @@ const Hero = () => {
           transition={{
             duration: 25,
             repeat: Infinity,
-            ease: "linear"
+            ease: 'linear',
           }}
           className="absolute bottom-10 left-10 w-96 h-96 bg-accent-blue/10 rounded-full blur-3xl"
         />
@@ -47,7 +50,7 @@ const Hero = () => {
             <img
               src={heroImage}
               alt="Amardeep Rana"
-              className="relative rounded-full w-64 h-64 md:w-96 md:h-96 object-cover shadow-2xl border-4 border-accent-cyan/50 hover:border-accent-cyan transition-all duration-300"
+              className="relative rounded-full w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 object-contain bg-black/5 shadow-2xl border-4 border-accent-cyan/50 hover:border-accent-cyan transition-all duration-300"
             />
           </div>
         </motion.div>
@@ -67,7 +70,7 @@ const Hero = () => {
           >
             Hi, my name is
           </motion.p>
-          
+
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -76,7 +79,7 @@ const Hero = () => {
           >
             Amardeep Rana
           </motion.h1>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -100,30 +103,27 @@ const Hero = () => {
               className="glow-text"
             />
           </motion.div>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1 }}
             className="text-lg md:text-xl text-text-secondary mb-8 leading-relaxed max-w-2xl"
           >
-            I'm a Full Stack Web Developer specializing in building exceptional digital experiences. 
-            Currently focused on creating responsive web applications with modern technologies like 
-            <span className="text-accent-cyan"> React.js</span>, 
-            <span className="text-accent-cyan"> Node.js</span>, and 
+            I'm a Full Stack Web Developer specializing in building exceptional digital experiences.
+            Currently focused on creating responsive web applications with modern technologies like
+            <span className="text-accent-cyan"> React.js</span>,
+            <span className="text-accent-cyan"> Node.js</span>, and
             <span className="text-accent-cyan"> MongoDB</span>.
           </motion.p>
-          
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2 }}
             className="flex gap-4 flex-wrap"
           >
-            <a
-              href="#projects"
-              className="custom-btn"
-            >
+            <a href="#projects" className="custom-btn">
               View My Work
             </a>
             <a
