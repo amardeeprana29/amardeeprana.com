@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import udemyLogo from '../assets/udemy-logo.png';
 import motioncutLogo from '../assets/motioncut-logo.png';
 import oasisLogo from '../assets/Oasis Infobyte-logo.png';
+import sailLogo from '../assets/sail-logo.svg';
 
 const Certificates = () => {
   const certificates = [
@@ -33,7 +34,7 @@ const Certificates = () => {
     {
       title: 'IT Intern (Bokaro Steel Plant)',
       platform: 'Steel Authority of India Limited (SAIL)',
-      logo: '',
+      logo: sailLogo,
       link: '/File/SAIL_Certificate.PDF',
     },
   ];

@@ -1,6 +1,7 @@
 // React import not required with new JSX transform
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaBuilding } from 'react-icons/fa';
+import sailLogo from '../assets/sail-logo.svg';
 
 const Internships = () => {
   const internships = [
@@ -12,6 +13,7 @@ const Internships = () => {
       description:
         'Observed and learned the working of enterprise-level IT operations including network systems, access control, and software workflows under senior IT engineers. Gained theoretical understanding of database handling, system monitoring, and internal IT process flow through guidance and demonstrations. Received exposure to how IT integrates with large-scale steel manufacturing systems and supports industrial operations. Status: Successfully completed internship on 22 November 2025.',
       icon: <FaBuilding />,
+      logo: sailLogo,
       certified: true,
     },
     {
@@ -53,7 +55,17 @@ const Internships = () => {
               className="glass-card p-8 hover:scale-105 transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-4xl text-accent-cyan">{internship.icon}</span>
+                {internship.logo ? (
+                  <div className="w-12 h-12 bg-white rounded-full p-1 flex items-center justify-center">
+                    <img
+                      src={internship.logo}
+                      alt={`${internship.company} logo`}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                ) : (
+                  <span className="text-4xl text-accent-cyan">{internship.icon}</span>
+                )}
                 <h3 className="text-2xl font-bold text-white">{internship.company}</h3>
               </div>
 
