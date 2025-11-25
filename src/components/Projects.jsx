@@ -86,16 +86,23 @@ const Projects = () => {
               layout
               className="glass-card overflow-hidden group"
             >
-              {project.image && (
-                <div className="relative overflow-hidden h-48">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-transparent opacity-60"></div>
-                </div>
-              )}
+              {/* Reserve image area for all projects so layout stays consistent */}
+              <div className="relative overflow-hidden h-48">
+                {project.image ? (
+                  <>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-transparent opacity-60"></div>
+                  </>
+                ) : (
+                  <div className="w-full h-full bg-primary-dark/30 flex items-center justify-center">
+                    {/* Blank placeholder - will be replaced when image is provided */}
+                  </div>
+                )}
+              </div>
 
               <div className="p-6">
                 <h4 className="text-xl font-bold text-white mb-3 group-hover:text-accent-cyan transition-colors">
@@ -118,7 +125,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  {project.liveLink && (
+                  {project.liveLink ? (
                     <a
                       href={project.liveLink}
                       target="_blank"
@@ -127,6 +134,10 @@ const Projects = () => {
                     >
                       <FaExternalLinkAlt /> Live Demo
                     </a>
+                  ) : (
+                    <span className="flex items-center gap-2 text-text-secondary text-sm font-mono opacity-80">
+                      <FaExternalLinkAlt /> Live Demo (coming soon)
+                    </span>
                   )}
                 </div>
               </div>
