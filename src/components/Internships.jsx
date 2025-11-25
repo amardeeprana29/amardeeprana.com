@@ -5,6 +5,16 @@ import { FaGraduationCap, FaBuilding } from 'react-icons/fa';
 const Internships = () => {
   const internships = [
     {
+      company: 'Steel Authority of India Limited (SAIL)',
+      role: 'IT Intern - Bokaro Steel Plant',
+      duration: 'Sep 2025 - Nov 2025',
+      tools: 'Network systems, Database handling, System monitoring',
+      description:
+        'Observed and learned the working of enterprise-level IT operations including network systems, access control, and software workflows under senior IT engineers. Gained theoretical understanding of database handling, system monitoring, and internal IT process flow through guidance and demonstrations. Received exposure to how IT integrates with large-scale steel manufacturing systems and supports industrial operations. Status: Successfully completed internship on 22 November 2025.',
+      icon: <FaBuilding />,
+      certified: true,
+    },
+    {
       company: 'MotionCut',
       role: 'Frontend Web Development Intern',
       duration: '1 Month (Dec 2023 - Jan 2024)',

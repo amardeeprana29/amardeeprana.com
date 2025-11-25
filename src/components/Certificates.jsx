@@ -30,6 +30,12 @@ const Certificates = () => {
       logo: oasisLogo,
       link: '/File/Oasis-%20%20Certificate.pdf',
     },
+    {
+      title: 'IT Intern (Bokaro Steel Plant)',
+      platform: 'Steel Authority of India Limited (SAIL)',
+      logo: '',
+      link: '/File/SAIL_Certificate.PDF',
+    },
   ];
 
   return (
@@ -50,11 +56,22 @@ const Certificates = () => {
               className="glass-card p-6 hover:scale-105 transition-all duration-300 flex flex-col items-center text-center"
             >
               <div className="w-20 h-20 mb-4 flex items-center justify-center bg-white rounded-full p-2">
-                <img
-                  src={cert.logo}
-                  alt={`${cert.platform} Logo`}
-                  className="max-w-full max-h-full object-contain"
-                />
+                {cert.logo ? (
+                  <img
+                    src={cert.logo}
+                    alt={`${cert.platform} Logo`}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                ) : (
+                  <div className="w-12 h-12 rounded-full bg-gray-100 text-gray-800 flex items-center justify-center font-mono text-sm">
+                    {cert.platform
+                      .split(' ')
+                      .slice(0, 2)
+                      .map((s) => s[0])
+                      .join('')
+                      .toUpperCase()}
+                  </div>
+                )}
               </div>
 
               <h3 className="text-lg font-bold text-white mb-2 font-mono">{cert.title}</h3>
