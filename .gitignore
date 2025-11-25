@@ -65,7 +65,6 @@ portfolio-react/
 # Local secure folder (keep sensitive files here; do NOT commit)
 /secure/
 
-# Ignore any uploaded or exported certificate/resume folders if left behind
-/public/File/
+# (removed ignoring public/File so resume/certificate PDFs are tracked)
 
 # End of .gitignore
