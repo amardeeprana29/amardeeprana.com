@@ -53,7 +53,7 @@ const About = () => {
               </p>
 
               <div className="flex gap-4 flex-wrap mt-8">
-                <a href="/File/Amardeep_Resume.pdf" download className="custom-btn">
+                <a href="/File/AMARDEEP_MERN_STACK_RESUME.pdf" download className="custom-btn">
                   Download Resume
                 </a>
               </div>
