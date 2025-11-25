@@ -40,7 +40,11 @@ const About = () => {
                 <span className="text-accent-cyan font-semibold">
                   Crowd-Sourced Disaster Management System
                 </span>{' '}
-                aimed at improving emergency response using real-time data and clean UI design.
+                aimed at improving emergency response using real-time data and clean UI design. I am
+                also building a{' '}
+                <span className="text-accent-cyan font-semibold">Library Management System</span>{' '}
+                (MERN) for handling book management, issue/return tracking, and role-based admin
+                controls — currently under active development.
               </p>
 
               <p>

@@ -14,7 +14,7 @@ const Projects = () => {
       description:
         'Developed a complete Library Management System (MERN) with book management, issue/return tracking, and member handling. Built during my IT internship at Steel Authority of India Limited (SAIL) — Bokaro Steel Plant. Implemented secure REST APIs, JWT authentication, and role-based admin controls. Features include CRUD operations, live search, filtering, and a responsive React UI. Status: Currently under development.',
       tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT'],
-      image: portfolioImg,
+      image: '',
       liveLink: '',
       category: 'Full Stack',
     },
@@ -86,14 +86,16 @@ const Projects = () => {
               layout
               className="glass-card overflow-hidden group"
             >
-              <div className="relative overflow-hidden h-48">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-transparent opacity-60"></div>
-              </div>
+              {project.image && (
+                <div className="relative overflow-hidden h-48">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary-dark via-transparent opacity-60"></div>
+                </div>
+              )}
 
               <div className="p-6">
                 <h4 className="text-xl font-bold text-white mb-3 group-hover:text-accent-cyan transition-colors">
@@ -116,14 +118,16 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-text-primary hover:text-accent-cyan transition-colors text-sm font-mono"
-                  >
-                    <FaExternalLinkAlt /> Live Demo
-                  </a>
+                  {project.liveLink && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-text-primary hover:text-accent-cyan transition-colors text-sm font-mono"
+                    >
+                      <FaExternalLinkAlt /> Live Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </motion.div>

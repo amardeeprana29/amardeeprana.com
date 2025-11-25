@@ -29,6 +29,7 @@ const Skills = () => {
         { name: 'Express.js', level: 75 },
         { name: 'REST APIs', level: 82 },
         { name: 'Java', level: 70 },
+        { name: 'JWT / Auth', level: 76 },
       ],
     },
     {
