@@ -22,13 +22,13 @@ const Certificates = () => {
       title: 'Frontend Web Development Intern',
       platform: 'MotionCut',
       logo: motioncutLogo,
-      link: 'File/Motion cut-cer.pdf',
+      link: '/File/Motion%20cut-cer.pdf',
     },
     {
       title: 'Web Development and Designing Intern',
       platform: 'Oasis Infobyte',
       logo: oasisLogo,
-      link: 'File/Oasis-  Certificate.pdf',
+      link: '/File/Oasis-%20%20Certificate.pdf',
     },
   ];
 
@@ -65,7 +65,7 @@ const Certificates = () => {
 
               {cert.link && (
                 <a
-                  href={encodeURI(`${import.meta.env.BASE_URL}${cert.link}`)}
+                  href={cert.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-accent-cyan hover:text-accent-blue transition-colors font-mono text-sm flex items-center gap-2"
