@@ -10,6 +10,15 @@ const Projects = () => {
 
   const projects = [
     {
+      title: 'Library Management System',
+      description:
+        'Developed a complete Library Management System (MERN) with book management, issue/return tracking, and member handling. Built during my IT internship at Steel Authority of India Limited (SAIL) — Bokaro Steel Plant. Implemented secure REST APIs, JWT authentication, and role-based admin controls. Features include CRUD operations, live search, filtering, and a responsive React UI. Status: Currently under development.',
+      tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT'],
+      image: portfolioImg,
+      liveLink: '',
+      category: 'Full Stack',
+    },
+    {
       title: 'Crowd-Sourced Disaster Management System',
       description:
         'A real-time web app for reporting and visualizing disaster locations on an interactive map using Google Maps API. Users can submit disaster data, which is stored and fetched live from Firebase.',
