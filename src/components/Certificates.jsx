@@ -35,7 +35,7 @@ const Certificates = () => {
       title: 'IT Intern (Bokaro Steel Plant)',
       platform: 'Steel Authority of India Limited (SAIL)',
       logo: sailLogo,
-      link: '/File/SAIL_Certificate.PDF',
+      link: '/File/SAIL_Certificate.pdf',
     },
   ];
 
