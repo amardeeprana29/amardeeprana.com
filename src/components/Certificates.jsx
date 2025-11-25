@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import udemyLogo from '../assets/udemy-logo.png';
 import motioncutLogo from '../assets/motioncut-logo.png';
 import oasisLogo from '../assets/Oasis Infobyte-logo.png';
-import sailLogo from '../assets/sail-logo.svg';
+import sailLogo from '../assets/SAIL_Logo.png';
 
 const Certificates = () => {
   const certificates = [

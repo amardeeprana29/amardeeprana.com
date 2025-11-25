@@ -1,7 +1,7 @@
 // React import not required with new JSX transform
 import { motion } from 'framer-motion';
 import { FaGraduationCap, FaBuilding } from 'react-icons/fa';
-import sailLogo from '../assets/sail-logo.svg';
+import sailLogo from '../assets/SAIL_Logo.png';
 
 const Internships = () => {
   const internships = [
