@@ -31,7 +31,7 @@ const Projects = () => {
       title: 'Personal Portfolio Website',
       description:
         'A responsive portfolio site built to showcase my web development projects, skills, and contact details. Designed with a consistent color theme and clean layout.',
-      tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+      tech: ['HTML', 'CSS', 'JavaScript'],
       image: portfolioImg,
       liveLink: 'https://amardeeprana29.github.io/My-Portfolio/',
       category: 'React',
