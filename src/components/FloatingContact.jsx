@@ -40,22 +40,42 @@ const FloatingContact = () => {
                 exit={{ opacity: 0, y: 20 }}
                 className="absolute bottom-16 right-0 flex flex-col gap-3 mb-3"
               >
-                {buttons.map((button, index) => (
-                  <motion.a
-                    key={index}
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 50 }}
-                    transition={{ delay: index * 0.1 }}
-                    href={button.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center gap-3 px-4 py-3 bg-gradient-to-r ${button.color} text-white rounded-full shadow-lg hover:shadow-xl transition-all group`}
-                  >
-                    <span className="text-xl">{button.icon}</span>
-                    <span className="font-mono text-sm whitespace-nowrap">{button.label}</span>
-                  </motion.a>
-                ))}
+                {buttons.map((button, index) => {
+                  const isMail = button.href && button.href.startsWith('mailto:');
+                  return isMail ? (
+                    <motion.button
+                      key={index}
+                      initial={{ opacity: 0, x: 50 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: 50 }}
+                      transition={{ delay: index * 0.1 }}
+                      onClick={() => {
+                        // Use window.location to open the default mail client (more reliable than target on anchors)
+                        window.location.href = button.href;
+                      }}
+                      className={`flex items-center gap-3 px-4 py-3 bg-gradient-to-r ${button.color} text-white rounded-full shadow-lg hover:shadow-xl transition-all group`}
+                      aria-label={button.label}
+                    >
+                      <span className="text-xl">{button.icon}</span>
+                      <span className="font-mono text-sm whitespace-nowrap">{button.label}</span>
+                    </motion.button>
+                  ) : (
+                    <motion.a
+                      key={index}
+                      initial={{ opacity: 0, x: 50 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: 50 }}
+                      transition={{ delay: index * 0.1 }}
+                      href={button.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex items-center gap-3 px-4 py-3 bg-gradient-to-r ${button.color} text-white rounded-full shadow-lg hover:shadow-xl transition-all group`}
+                    >
+                      <span className="text-xl">{button.icon}</span>
+                      <span className="font-mono text-sm whitespace-nowrap">{button.label}</span>
+                    </motion.a>
+                  );
+                })}
               </motion.div>
             )}
           </AnimatePresence>
