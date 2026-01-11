@@ -11,7 +11,7 @@ const Certificates = () => {
       title: 'HTML5, CSS3 and JavaScript',
       platform: 'Udemy',
       logo: udemyLogo,
-      link: '',
+      link: 'https://www.udemy.com/certificate/UC-49490c6d-4c32-42ac-bb94-f306b2365621/',
     },
     {
       title: 'Git & GitHub',
