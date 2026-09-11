@@ -28,7 +28,7 @@ const About = () => {
               <p>
                 Hello! I&apos;m{' '}
                 <span className="text-accent-cyan font-semibold">Amardeep Rana</span>, a passionate
-                <span className="text-accent-cyan"> Full Stack Web Developer</span> with hands-on
+                <span className="text-accent-cyan">JAVA Full Stack Web Developer</span> with hands-on
                 experience in both frontend and backend technologies. I specialize in building
                 exceptional digital experiences that are fast, accessible, and visually appealing.
               </p>
