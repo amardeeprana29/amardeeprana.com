@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from 'react-icons/fa';
 import disasterImg from '../assets/disaster-project.jpg';
 import blogifyImg from '../assets/blogify-project.jpg';
 import portfolioImg from '../assets/portfolio-project.jpg';
-import Smartlibrary from '../assets/Smartlibrary';
+import smartLibrary from '../assets/Smartlibrary.jpg';
 
 const Projects = () => {
   const [filter, setFilter] = useState('All');
@@ -15,7 +15,7 @@ const Projects = () => {
       description:
         'Developed a complete Library Management System (MERN) with book management, issue/return tracking, and member handling. Built during my IT internship at Steel Authority of India Limited (SAIL) — Bokaro Steel Plant. Implemented secure REST APIs, JWT authentication, and role-based admin controls. Features include CRUD operations, live search, filtering, and a responsive React UI. Status: Currently under development.',
       tech: ['MongoDB', 'Express.js', 'React.js', 'Node.js', 'JWT'],
-      image: Smartlibrary,
+      image: smartLibrary,
       liveLink: 'https://smartlibraryhub.vercel.app/',
       category: 'Full Stack',
     },

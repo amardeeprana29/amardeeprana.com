@@ -34,7 +34,7 @@ const Stats = () => {
     },
     {
       icon: <FaCoffee />,
-      end: 500,
+      end: 200,
       suffix: '+',
       label: 'Cups of Coffee',
       color: 'from-accent-cyan to-accent-blue',

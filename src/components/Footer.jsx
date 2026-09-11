@@ -13,7 +13,7 @@ const Footer = () => {
         className="container mx-auto flex flex-col md:flex-row justify-between items-center gap-4"
       >
         <p className="text-text-secondary text-center md:text-left font-mono text-sm">
-          &copy; 2025 Amardeep Rana. Built with{' '}
+          &copy; 2026 Amardeep Rana. All rights reserved. Built with{' '}
           <FaHeart className="inline text-accent-cyan animate-pulse" /> using React & Tailwind
         </p>
 

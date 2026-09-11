@@ -109,17 +109,19 @@ const Hero = () => {
           </motion.div>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1 }}
-            className="text-lg md:text-xl text-text-secondary mb-8 leading-relaxed max-w-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1 }}
+              className="text-lg md:text-xl text-text-secondary mb-8 leading-relaxed max-w-2xl"
           >
-            I&apos;m a Full Stack Web Developer specializing in building exceptional digital
-            experiences. Currently focused on creating responsive web applications with modern
-            technologies like
-            <span className="text-accent-cyan"> React.js</span>,
-            <span className="text-accent-cyan"> Node.js</span>, and
-            <span className="text-accent-cyan"> MongoDB</span>.
+              I&apos;m a Java Full Stack Developer specializing in building responsive and
+              scalable web applications. I work with
+              <span className="text-accent-cyan"> Java</span>,
+              <span className="text-accent-cyan"> Spring Boot</span>,
+              <span className="text-accent-cyan"> Oracle SQL</span>, 
+              <span className="text-accent-cyan"> React.js</span>, and
+              <span className="text-accent-cyan"> Git</span> to create modern,
+              user-focused digital experiences.
           </motion.p>
 
           <motion.div

@@ -4,12 +4,12 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const About = () => {
   const highlights = [
-    'Full Stack Web Development',
-    'Responsive UI/UX Design',
-    'RESTful API Development',
-    'Database Management',
+    'Java Full Stack Development',
+    'React.js & Responsive UI',
+    'Spring Boot & RESTful APIs',
+    'SQL & Database Management',
     'Problem Solving & DSA',
-    'Team Collaboration',
+    'Git & Team Collaboration',
   ];
 
   return (
@@ -27,10 +27,11 @@ const About = () => {
             <div className="space-y-6 text-text-secondary text-lg leading-relaxed">
               <p>
                 Hello! I&apos;m{' '}
-                <span className="text-accent-cyan font-semibold">Amardeep Rana</span>, a passionate
-                <span className="text-accent-cyan"> JAVA Full Stack Web Developer</span> with hands-on
-                experience in both frontend and backend technologies. I specialize in building
-                exceptional digital experiences that are fast, accessible, and visually appealing.
+                <span className="text-accent-cyan font-semibold">Amardeep Rana</span>, a passionate{' '}
+                <span className="text-accent-cyan">Java Full Stack Developer</span> with hands-on
+                  experience in frontend and backend technologies. I specialize in building
+                  responsive, scalable, and user-friendly web applications that deliver
+                  seamless digital experiences.
               </p>
 
               <p>
@@ -57,7 +58,7 @@ const About = () => {
               </p>
 
               <div className="flex gap-4 flex-wrap mt-8">
-                <a href="/File/AMARDEEP_MERN_STACK_RESUME.pdf" download className="custom-btn">
+                <a href="/File/AMARDEEP_RESUME.pdf" download className="custom-btn">
                   Download Resume
                 </a>
               </div>
